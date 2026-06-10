@@ -3,10 +3,11 @@ project:
   
 website: 
   page-navigation: true
-  title: "AI-PROWIL IRES 2025 - Statistics Workshop" 
-  site-url: "https://dharaden.github.io/aware-stats_2025" 
+  title: "AI-PROWIL IRES 2026 - Statistics Workshop" 
+  description: "A hands-on R and Quarto statistics workshop for REU participants in the AWARE-AI / AI-PROWIL IRES program."
+  site-url: "https://dharaden.github.io/REU_2026" 
   
-  repo-url: https://github.com/dharaden/aware-stats_2025 
+  repo-url: https://github.com/dharaden/REU_2026
   repo-actions: [edit, issue]
 
 
@@ -15,7 +16,7 @@ website:
   
   page-footer:
     right: "This page is built with ☕ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Dustin Haraden, 2025"
+    left: "&copy; CC-By Dustin Haraden, 2026"
     background: "#3d3d3d"
     
   sidebar:
@@ -25,7 +26,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/dharaden/aware-stats_2025
+        href: https://github.com/dharaden/REU_2026
         text: "GitHub"
         
 

@@ -1,6 +1,6 @@
 ---
 title: "AI-PROWIL IRES: Statistics Workshop"
-subtitle: "Sept. 9, 2025"
+subtitle: "Summer 2026"
 ---
 
 # Defense Against the Dark R's
