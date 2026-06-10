@@ -1,0 +1,152 @@
+---
+title: "RICLPM Workshop"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+Welcome to the workshop titled "Decomposing Within & Between Person Effects in Longitudinal Data with SEM in R"! My name is Dustin Haraden and I will be somewhat of a guide throughout this process. Let's hope that we can work together to get you comfortable enough to start asking some more interesting questions! 
+
+I am an Assistant Professor in Clinical Psychology at Rochester Institute of Technology. My research interests focus on examining risk for depression in youth with a focus on sleep, circadian rhythms and pubertal development. I also have an interest in methodology, statistics and open science. 
+
+Please feel free to reach out for any reason! dxhgsh@rit.edu or you can follow me on blue sky @dustinharaden.bsky.social
+
+Let's get started! 
+
+```{r setup, include=FALSE}
+# for SEM
+library(lavaan)
+# for any manipulation
+library(dplyr)
+# some data processing (may not use)
+library(tidyr)
+# visualizations
+library(ggplot2)
+# SEM Visualizations (sometimes)
+library(semPlot)
+
+dat <- read.table("https://raw.githubusercontent.com/JeroenDMulder/RI-CLPM/refs/heads/master/data/RICLPM.dat", 
+                  col.names = c(
+                    "x1", "x2", "x3", "x4", "x5", 
+                    "y1", "y2", "y3", "y4", "y5")
+) 
+
+```
+
+Loading in the data above that has accompanied the article from Mulder, J. D., & Hamaker, E. L. (2021). Three extensions of the random intercept cross-lagged panel model. Structural Equation Modeling: A Multidisciplinary Journal, 28(4), 638-648. 
+
+This will be the main source of data for running the models for the current workshop. If there is the need for more, that will be shared with you. 
+
+```{r}
+clpm_syntax <- '
+    #regressions
+    x2 ~ a*x1
+    x3 ~ a*x2
+    x4 ~ a*x3
+    
+    y2 ~ b*y1
+    y3 ~ b*y2
+    y4 ~ b*y3
+    
+    # cross-paths
+    
+    y2 ~ c*x1
+    y3 ~ c*x2
+    y4 ~ c*x3
+    
+    x2 ~ d*y1
+    x3 ~ d*y2
+    x4 ~ d*y3
+    
+    # covariances
+    x1 ~~ y1
+    x2 ~~ y2
+    x3 ~~ y3
+    x4 ~~ y4
+'
+
+
+#Fit the model 
+clpm.fit <- sem(clpm_syntax, data = dat, missing = 'ML')
+summary(clpm.fit)
+
+semPaths(clpm.fit, layout = "tree2")
+```
+
+
+ Now we will introduce the random intercept cross lagged panel model 
+ 
+```{r}
+riclpm_syntax <- '
+    # Random Intercepts
+    RIx =~ 1*x1 + 1*x2 + 1*x3 + 1*x4
+    RIy =~ 1*y1 + 1*y2 + 1*y3 + 1*y4
+    
+      #RI variance Covariance
+      RIx ~~ RIy
+      RIx ~~ RIx
+      RIy ~~ RIy
+      
+    # Within Person
+    wx1 =~ 1*x1
+    wx2 =~ 1*x2
+    wx3 =~ 1*x3
+    wx4 =~ 1*x4
+    wy1 =~ 1*y1
+    wy2 =~ 1*y2
+    wy3 =~ 1*y3
+    wy4 =~ 1*y4
+
+
+    # within person regressions
+    wx2 ~ a*wx1
+    wx3 ~ a*wx2
+    wx4 ~ a*wx3
+    
+    wy2 ~ b*wy1
+    wy3 ~ b*wy2
+    wy4 ~ b*wy3
+    
+    # cross-paths
+    
+    wy2 ~ c*wx1
+    wy3 ~ c*wx2
+    wy4 ~ c*wx3
+    
+    wx2 ~ d*wy1
+    wx3 ~ d*wy2
+    wx4 ~ d*wy3
+    
+    # covariances
+    wx1 ~~ wy1
+    wx2 ~~ wy2
+    wx3 ~~ wy3
+    wx4 ~~ wy4
+    
+    # varaince
+    wx1 ~~ wx1
+    wx2 ~~ wx2
+    wx3 ~~ wx3
+    wx4 ~~ wx4
+    wy1 ~~ wy1
+    wy2 ~~ wy2
+    wy3 ~~ wy3
+    wy4 ~~ wy4
+'
+
+riclpm.fit <- lavaan(riclpm_syntax, data = dat)
+summary(riclpm.fit, fit.measures = TRUE)
+
+parameters::model_parameters(riclpm.fit)
+```
+ 
+
+
+
+
+
+
+
+
+
+
