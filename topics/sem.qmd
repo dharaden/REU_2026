@@ -1,0 +1,42 @@
+---
+title: "Structural Equation Modeling"
+editor: visual
+---
+
+# SEM
+
+There are so many different directions that we can go in when it comes to Structural Equation Modeling. In my opinion, it is one of the most versatile techniques that can be used for the type of work that I do. One major strength of SEM is that it aligns with the way that we conceptualize various psychological constructs.
+
+For example, take a second and ask yourself "What is depression or anxiety?". I'll wait.
+
+You better not be reading this if you didn't think about the question before. Is depression/anxiety something that can be directly measured and observed in the same way that mass or distance can? Can we take someone's blood or do a scan and point to the output and say "there is the depression"?
+
+We can't.
+
+Then we are working in the space that is unable to be directly observed. We have to take multiple measures of things that we think are related to the construct. Once we have those measurements, we can look at them together and assume that because we are seeing these things, then someone is experienced depression or anxiety.
+
+To accurately model this, we can implement Structural Equation Modeling. This deals with "latent" (or unobserved) variables. By taking manifest (observed) variables, we can investigate the overall variance and covariance among these items to determine an underlying, latent construct.
+
+A good example of a latent variable is IQ and the overall "g-factor". We use these individual tests that we can observe to make claims about overall intelligence which is not something we are able to directly tap into.
+
+![](images/clipboard-3884973427.png)
+
+# SEM in R
+
+There have been lots of advancements in computing and using R for SEM have become increasingly popular (another program to use is M-Plus, but you have to pay for that, so we won't talk about it). The package that I like to use for SEM in R is `lavaan`.
+
+```{r}
+library(lavaan)
+```
+
+There is a whole lot of things that we can do, and I will leave it up to the group to determine where we want to go. I've given a workshop on Random Intercept Cross-Lagged Panel models if we want to do that. The slides and script can be found over in [Materials](../materials.qmd){target="_blank"}. Otherwise, here are some areas we can explore:
+
+-   Exploratory Factor Analysis
+
+-   Confirmatory Factor Analysis
+
+-   Path Analysis
+
+-   Latent Growth Curve Models
+
+-   Random Intercept Cross Lagged Panel Model

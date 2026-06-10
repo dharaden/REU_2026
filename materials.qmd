@@ -1,0 +1,27 @@
+---
+title: Materials
+---
+
+## Data for Activities
+
+TIPI_Data <a href="/files/data/TIPI_Data.csv" download="TIPI_Data.csv">TIPI Data (.csv)</a>
+
+TIPI Documentation - <a href="/files/data/TIPI_Qs.docx" download="TIPI_Qs.docx">TIPI Documentation (.docx)</a>
+
+Visualization Dataset <a href="/files/data/viz.csv" download="viz.csv">Download Viz Activity Data (.csv)</a>
+
+Bechdel Dataset <a href="/files/data/bechdel.csv" download="bechdel.csv"> Download Bechdel Data (.csv)</a>
+
+## Markdowns For Activities
+
+Data Wrangling Origins Activity <a href="/files/_lab-rmd/data-wrangling.Rmd" download="data-wrangling.Rmd">Wrangling Origins (.Rmd)</a>
+
+Describe & Visualize <a href="/files/_lab-rmd/describe-viz.Rmd" download="describe-viz.Rmd">Describe & Visualize (.Rmd)</a>
+
+Dark R's - <a href="/files/_lab-rmd/dark-rs.Rmd" download="dark-rs.Rmd">Dark Rs (.Rmd)</a>
+
+# RI-CLPM
+
+Slides<a href="/files/RICLPM_Workshop_Haraden.pptx" download="RICLPM_Workshop_Haraden.pptx">RICLPM (.pptx)</a>
+
+Markdown<a href="/files/_lab-rmd/RICLPM_Workshop_Script.Rmd" download="RICLPM_Workshop_Script.Rmd">RICLPM (.Rmd)</a>

@@ -1,0 +1,72 @@
+project: 
+  type: website
+  
+website: 
+  page-navigation: true
+  title: "AI-PROWIL IRES 2025 - Statistics Workshop" 
+  site-url: "https://dharaden.github.io/aware-stats_2025" 
+  
+  repo-url: https://github.com/dharaden/aware-stats_2025 
+  repo-actions: [edit, issue]
+
+
+
+  open-graph: true
+  
+  page-footer:
+    right: "This page is built with ☕ and [Quarto](https://quarto.org/)."
+    left: "&copy; CC-By Dustin Haraden, 2025"
+    background: "#3d3d3d"
+    
+  sidebar:
+    background: "#3d3d3d"
+    logo: "images/hex.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/dharaden/aware-stats_2025
+        text: "GitHub"
+        
+
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: "Overview"
+      - section: "Topics"
+        contents:
+          - href: topics/topic-1.qmd
+            text: "Getting Started"
+          - href: topics/tidy-viz.qmd
+            text: "dplyr & ggplot2"
+          - href: topics/tab-mark.qmd
+            text: "Tables & Reporting"
+          - href: topics/sem.qmd
+            text: "Structural Equation Modeling"
+      - href: materials.qmd
+        text: "Materials"
+      - href: resources.qmd
+        text: "Additional Stuff"
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    mainfont: "Atkinson Hyperlegible"
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+freeze: auto
+
+editor: visual
+
+
+filters:
+  - include-files.lua
+  - quarto
+
+  

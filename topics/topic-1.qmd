@@ -1,0 +1,28 @@
+---
+title: "Getting Started"
+editor: visual
+---
+
+# R & Tidy Data
+
+Welcome to the workshop (I hope this isn't the first time I am welcoming you)! I am very excited to get to work with you throughout this workshop. We will begin with a brief exploration into using R & R-Studio, and an overall emphasis on reproducible workflows. This first portion will set up
+
+We’ll then dive right into our primary tool, R. This session will go over installing R and RStudio, navigating the interface, understanding R projects, and learning the foundational syntax of the R language and the `tidyverse`, including data types and basic functions.
+
+## Prepare
+
+-   Laptop
+
+-   Install R and R-Studio (<https://posit.co/download/rstudio-desktop/>)
+
+## Slides
+
+[💻Getting Started](../slides/topic-1.html){target="_blank"}
+
+## Activities
+
+📋[Getting Comfy with R](../activities/basic_intro.html){target="_blank"}
+
+📋[More Comfy with R](../activities/basic_intro2.html){target="_blank"}
+
+<br><br>

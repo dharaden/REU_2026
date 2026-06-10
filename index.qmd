@@ -1,0 +1,86 @@
+---
+title: "AI-PROWIL IRES: Statistics Workshop"
+subtitle: "Sept. 9, 2025"
+---
+
+# Defense Against the Dark R's
+
+## Workshop Outline
+
+-   Introductions
+
+-   Getting Started with R
+
+-   Basic Descriptives and Visualizations
+
+-   Reproducible tables (correlations & regressions)
+
+-   Integrating stats into text
+
+-   Potential Topics:
+
+    -   Intro to Structural Equation Modeling
+
+        -   Exploratory Factor Analysis
+
+        -   Confirmatory Factor Analysis
+
+        -   Path Analysis
+
+        -   Latent Growth Curve Models
+
+        -   Random Intercept Cross Lagged Panel Model
+
+*Topics may shift based on need of those in attendance.*
+
+## Who is Presenting??
+
+My name is Dustin Haraden and I am an assistant professor at Rochester Institute of Technology in New York, USA. I am a clinical psychologist with a focus on developmental psychopathology. My research centers on investigating circadian rhythms, sleep and pubertal development as risk factors for psychopathology in youth. I received my PhD in Clinical/Community Psychology at the University of Illinois at Urbana-Champaign.
+
+Feel free to reach out to me after the completion of this workshop! I love talking about R and getting folks more familiar with the awesome tool that it is. Plus, I would love to learn some cool new things.
+
+Seriously, send me an email.
+
+*Presenter:* Dustin Haraden, PhD
+
+*Contact:* Email - [dxhgsh\@rit.edu](mailto:dxhgsh@rit.edu){.email}; BlueSky - @dustinharaden.bsky.social
+
+## Workshop Description
+
+A foundation in organizing your R projects and combatting informal practices. Introduction and exploration of Open Science within a Clinical/Community framework.
+
+### Expectations and Goals
+
+The main goal of this course/workshop is to provide an on-ramp to using R in practice. There will likely be introductions to coding and using the software as well as important functions that are used within a social science perspective. Additionally, a goal is to introduce researchers to effective strategies and practices for organizing their research projects within R. The focus will revolve around promoting Open Science practices as they apply to own interests. I will introduce a workflow within R that will maximize reproducibility and attempt to future proof analyses (take that future Dustin!).
+
+## Workshop Materials
+
+### Encouraged/Required Materials
+
+-   Computer with R & R-studio installed & Updated
+-   Laughter (WARNING: Instructor [will]{.underline} make lame dad jokes)
+-   Curiosity/Interest
+-   Coffee, tea, or whatever beverage you prefer at this time
+
+### Optional Materials
+
+-   Light Saber
+-   T.A.R.D.I.S./Sonic Screwdriver
+-   DeLorean
+-   One Ring to Rule Them All
+
+## Recommended Future Readings
+
+**R for Data Science -** *Hadley Wickham*, <https://r4ds.hadley.nz/> (free)
+
+**R Markdown: The Definitive Guide -** *Yihui Xie, J. J. Allaire, Garrett Grolemund;* <https://bookdown.org/yihui/rmarkdown/> *(free)*
+
+**What They Forgot to Teach You About R** - *Jenny Bryan, Jim Hester, Shannon Pileggi, E. David Aja;* <https://rstats.wtf/> (free)
+
+**Advanced R -** *Hadley Wickham,* <https://adv-r.hadley.nz/> (free)
+
+**The Seven Deadly Sins of Psychology: A Manifesto for Reforming the Culture of Scientific Practice -** *Chris Chambers* (check it out from the library & give it a read when you can)
+
+**Improving your Statistical Inferences** *- Daniël Lakens* <https://lakens.github.io/statistical_inferences/> (free)
+
+**ggplot2: Elegant Graphics for Data Analysis** - *Hadley Wickham, Danielle Navarro & Thomas Lin Pedersen* <https://ggplot2-book.org/> (free)
