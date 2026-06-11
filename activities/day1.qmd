@@ -1,9 +1,9 @@
 ---
-title: "Day 1 Exercise - Getting Comfy with R"
+title: "Activity 1 - Getting Comfy with R"
 editor: visual
 ---
 
-### **In-Class Activity: Your First R Session**
+### **Activity 1: Your First R Session**
 
 **Goal**: To become familiar with the RStudio interface and perform a basic data exploration workflow.
 
@@ -11,13 +11,13 @@ editor: visual
 
 1.  Go to `File > New File > R Markdown`
 
-2.  Provide the title "Day 1" and input your name as the author
+2.  Provide the title "Activity 1" and input your name as the author
 
 3.  A script will open in the **Source** pane. Remove unnecessary code.
 
 4.  Go to `File > Save` and name it `introduction.Rmd`. Make sure this saves in the same folder as all of your other stuff. Stay Organized!
 
-    1.  I'm not going to tell you how to organize your folders, but I will give a suggestion. Have 1 folder for the whole class. This will have the Project that we created. Inside there, have a folder for "Class Activities". This is where you can save this file. Then, have other folders for the labs and what not.
+    1.  I'm not going to tell you how to organize your folders, but I will give a suggestion. Have 1 folder for the whole workshop. This will have the Project that we created. Inside there, have a folder for "Class Activities". This is where you can save this file. Then, have other folders for the labs and what not.
 
 ### Starting the document
 

@@ -9,18 +9,16 @@ Welcome to the workshop! I am very excited to get to work with you on our journe
 
 The goal of the workshop is for you to have an understanding of navigating these statistical models. The pacing and direction of the workshop may deviate from what we have here in order to meet the needs of the participants.
 
-## Session 1A
-
 ### Slides
 
 💻Getting Started<a href="/sessions/1/session1_slides.pptx" download="session1_slides.pptx">Session 1 Slides (.pptx)</a>
 
 ### In-Class Activity
 
-[Getting Comfy with R](../class-activities/day1.html){target="_blank"}
+The R Kitchen<a href="/sessions/1/welcome-to-the-kitchen.docx" download="welcome-to-the-kitchen.docx">Welcome to the Kitchen (.docx)</a>
 
-### For Next Time
+### Data
 
-📋[Lab 1 - Foundations of a Data Workflow](../labs/lab-1_data-workflow.html)
+Cookie Ratings<a href="/files/data/cookie_ratings.csv" download="cookie_ratings.csv">Cookie Ratings (.csv)</a>
 
 <br><br>

@@ -49,9 +49,7 @@ options(scipen = 100)
 
 ## Power Posing - Carney, Cuddy & Yapp (2010)
 
-Carney, D. R., Cuddy, A. J., & Yap, A. J. (2010). Power posing:
-Brief nonverbal displays affect neuroendocrine levels and risk
-tolerance. *Psychological science*, *21*(10), 1363-1368. [link](https://faculty.haas.berkeley.edu/dana_carney/power.poses.PS.2010.pdf)
+Carney, D. R., Cuddy, A. J., & Yap, A. J. (2010). Power posing: Brief nonverbal displays affect neuroendocrine levels and risk tolerance. *Psychological science*, *21*(10), 1363-1368. [link](https://faculty.haas.berkeley.edu/dana_carney/power.poses.PS.2010.pdf)
 
 ::: {.callout-note icon="false"}
 "Power posing increases testosterone and risk-taking."
@@ -104,7 +102,7 @@ I want to bake a cake!
 <br></br>
 
 | Replication | Reproducibility |
-|------------------------------------|------------------------------------|
+|----|----|
 | Have a similar research question | Use the same research question |
 | Collect your own data | Use their data |
 | Follow their steps with **your** resources | Follow their steps with **their** resources |

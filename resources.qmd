@@ -146,11 +146,9 @@ library(here) library(tidyverse) library(rio)
 
 Import the data using the **rio** package and save it to an object called **sleep_data**. You will be able to use the **import()** function as well as the **here()** function.
 
-+-------------------------------------------------------------------------------+
-|                                                                               |
-+===============================================================================+
+|  |
+|----|
 | **sleep_data \<- import(here(“Labs”, “Data”, “SleepFile”, “SleepData.sav”))** |
-+-------------------------------------------------------------------------------+
 
 # Visualizing Distributions
 
@@ -514,27 +512,17 @@ Note: everything() is a helper function that gives us all the remaining variable
 
 There are some “helper” functions that you can use along with select() that can sometimes be more efficient than selecting your variables explicitly by name.
 
-+-----------------------------------+-----------------------------------------------------------------+
-|                                   |                                                                 |
-+===================================+=================================================================+
-| **function**                      | **what it does**                                                |
-+-----------------------------------+-----------------------------------------------------------------+
-| starts_with()                     | selects columns starting with a string                          |
-+-----------------------------------+-----------------------------------------------------------------+
-| ends_with()                       | selects columns that end with a string                          |
-+-----------------------------------+-----------------------------------------------------------------+
-| contains()                        | selects columns that contain a string                           |
-+-----------------------------------+-----------------------------------------------------------------+
-| matches()                         | selects columns that match a regular expression                 |
-+-----------------------------------+-----------------------------------------------------------------+
-| num_ranges()                      | selects columns that match a numerical range                    |
-+-----------------------------------+-----------------------------------------------------------------+
-| one_of()                          | selects columns whose names match entries in a character vector |
-+-----------------------------------+-----------------------------------------------------------------+
-| everything()                      | selects all columns                                             |
-+-----------------------------------+-----------------------------------------------------------------+
-| last_col()                        | selects last column; can include an offset.                     |
-+-----------------------------------+-----------------------------------------------------------------+
+|  |  |
+|----|----|
+| **function** | **what it does** |
+| starts_with() | selects columns starting with a string |
+| ends_with() | selects columns that end with a string |
+| contains() | selects columns that contain a string |
+| matches() | selects columns that match a regular expression |
+| num_ranges() | selects columns that match a numerical range |
+| one_of() | selects columns whose names match entries in a character vector |
+| everything() | selects all columns |
+| last_col() | selects last column; can include an offset. |
 
 Quick example:
 
