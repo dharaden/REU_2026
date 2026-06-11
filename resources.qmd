@@ -20,11 +20,11 @@ We will go over this during the first day of class, so this guide is just to use
 
 **Things needed:**
 
--   Computer
+- Computer
 
--   Internet Connection
+- Internet Connection
 
--   A coffee or preferred beverage usually helps!
+- A coffee or preferred beverage usually helps!
 
 ### R: Download and Install
 
@@ -146,9 +146,11 @@ library(here) library(tidyverse) library(rio)
 
 Import the data using the **rio** package and save it to an object called **sleep_data**. You will be able to use the **import()** function as well as the **here()** function.
 
-|  |
-|----|
++-------------------------------------------------------------------------------+
+|                                                                               |
++===============================================================================+
 | **sleep_data \<- import(here(“Labs”, “Data”, “SleepFile”, “SleepData.sav”))** |
++-------------------------------------------------------------------------------+
 
 # Visualizing Distributions
 
@@ -174,7 +176,7 @@ Investigate the distribution more with **boxplot.stats(x = sleep_data\$age)\$out
 
 ## Looking into the future…
 
-So far we have been plotting in base R. However, the[ggplot2 package](https://www.rdocumentation.org/packages/ggplot2/versions/3.2.1) is generally a much better tool for plotting. For now we’ll stick with base plotting to keep things simple, but in a future class you will learn how to use **ggplot** to make better-looking plots, such as this:
+So far we have been plotting in base R. However, the [ggplot2 package](https://www.rdocumentation.org/packages/ggplot2/versions/3.2.1) is generally a much better tool for plotting. For now we’ll stick with base plotting to keep things simple, but in a future class you will learn how to use **ggplot** to make better-looking plots, such as this:
 
 Ok, so now that we know how to visualize a basic distribution, let’s think about how we commonly characterize distributions with descriptive statistics…
 
@@ -233,6 +235,8 @@ This function automatically calculates all of the descriptives we reviewed above
 **Notes:** If you load a library at the beginning, you can directly call any function from it. Instead, you can call a function by library_name::function_name without loading the entire library.
 
 +--------------------------------------------------+
+|                                                  |
++==================================================+
 | **psych::describe(sleep_data)**                  |
 |                                                  |
 | **\# or if you have already loaded the library** |
@@ -250,19 +254,21 @@ Now let’s take a closer look at trying to update the age variable in this data
 
 The tidyverse, according to its creators, is [“an opinionated collection of R packages designed for data science.”](https://www.tidyverse.org/) It’s a suite of packages designed with a consistent philosophy and aesthetic. This is nice because all of the packages are designed to work well together, providing a consistent framework to do many of the most common tasks in R, including, but not limited to…
 
--   data manipulation (dplyr) **= our focus today**
+- data manipulation (dplyr) **= our focus today**
 
--   reshaping data (tidyr)
+- reshaping data (tidyr)
 
--   data visualization (ggplot2)
+- data visualization (ggplot2)
 
--   working with strings (stringr)
+- working with strings (stringr)
 
--   working with factors (forcats)
+- working with factors (forcats)
 
 To load all the packages included in the tidyverse, use:
 
 +------------------------------------------------------------------+
+|                                                                  |
++==================================================================+
 | **\# if you need to install, use install.packages(‘tidyverse’)** |
 |                                                                  |
 | **library(tidyverse)**                                           |
@@ -312,15 +318,15 @@ Most of the functions we’ll go over today come from the {dplyr} package. Essen
 
 {dplyr} is a “grammar” of data manipulation. As such, its functions are verbs:
 
--   mutate() adds new variables that are functions of existing variables
+- mutate() adds new variables that are functions of existing variables
 
--   select() picks variables based on their names.
+- select() picks variables based on their names.
 
--   filter() picks cases based on their values.
+- filter() picks cases based on their values.
 
--   summarize() reduces multiple values down to a single summary.
+- summarize() reduces multiple values down to a single summary.
 
--   arrange() changes the ordering of the rows.
+- arrange() changes the ordering of the rows.
 
 Note that {dplyr} functions always take a data frame as the first argument and return a modified data frame back to you. The fact that you always get a data frame back is useful down the road when you are modeling and visualizing data.
 
@@ -332,9 +338,9 @@ You can enter a pipe with the shortcut CTRL+Shift+M for PC or CMD+Shift+M for Ma
 
 A pipe passes an object on the left-hand side as the first argument (or . argument) of whatever function is on the right-hand side.
 
--   x %\>% f(y) is the same as f(x, y)
+- x %\>% f(y) is the same as f(x, y)
 
--   y %\>% f(x, ., z) is the same as f(x, y, z )
+- y %\>% f(x, ., z) is the same as f(x, y, z )
 
 Example: I want to calculate the mean of the mpg variable from the mtcars data set and round our answer to 2 decimal places. I can accomplish this by nesting:
 
@@ -345,6 +351,8 @@ Example: I want to calculate the mean of the mpg variable from the mtcars data s
 Or, we could use pipes. Grammatically, you can think of a pipe as “then.” I have a variable, the mile per gallon of cars, THEN I want to take the mean of that variable, and THEN I want to round that answer to two decimal places.
 
 +---------------------------------------------------------------------------------+
+|                                                                                 |
++=================================================================================+
 | **mtcars\$mpg %\>% \# select the \`mpg\` variable from the \`mtcars\` dataset** |
 |                                                                                 |
 | **mean(na.rm = TRUE) %\>% \# calculate the mean**                               |
@@ -362,27 +370,27 @@ Now try rewriting the following code using pipes:
 
 1.  Cleaner code
 
-    -   This is nice, because it helps make your code more readable by other humans (including your future self).
+    - This is nice, because it helps make your code more readable by other humans (including your future self).
 
 <!-- -->
 
 2.  Cleaner environment
 
-    -   When you use pipes, you have basically no reason to save objects from intermediary steps in your data wrangling / analysis workflow, because you can just pass output from function to function without saving it.
+    - When you use pipes, you have basically no reason to save objects from intermediary steps in your data wrangling / analysis workflow, because you can just pass output from function to function without saving it.
 
-    -   Finding objects you’re looking for is easier.
+    - Finding objects you’re looking for is easier.
 
 <!-- -->
 
 3.  Efficiency in writing code
 
-    -   Naming objects is hard; piping means coming up with fewer names.
+    - Naming objects is hard; piping means coming up with fewer names.
 
 <!-- -->
 
 4.  More error-proof
 
-    -   Because naming is hard, you might accidentally re-use a name and make an error.
+    - Because naming is hard, you might accidentally re-use a name and make an error.
 
 ## Manipulating Observations
 
@@ -395,6 +403,8 @@ The first argument is data and subsequent arguments are logical expressions that
 For example, we can filter rows to retain data only for the students who do not have a roommate.
 
 +---------------------------+
+|                           |
++===========================+
 | **sleep_data %\>%**       |
 |                           |
 | **filter(roommate == 2)** |
@@ -406,15 +416,15 @@ But we may want to save this as a new datafile. Can assign this to a new object.
 
 The == we just used is an example of a comparison operator that tests for equality. The other comparison operators available are :
 
--   \> (greater than)
+- \> (greater than)
 
--   \>= (greater than or equal to)
+- \>= (greater than or equal to)
 
--   \< (less than)
+- \< (less than)
 
--   \<= (less than or equal to)
+- \<= (less than or equal to)
 
--   != (not equal to)
+- != (not equal to)
 
 You can combine multiple arguments to filter() with Boolean operators. The figure below from[R for Data Science](https://r4ds.had.co.nz/transform.html#logical-operators) shows the complete set of Boolean operators.
 
@@ -423,6 +433,8 @@ You can combine multiple arguments to filter() with Boolean operators. The figur
 First, let’s filter for observations that are greater than the mean of **age**
 
 +-------------------------------------------+
+|                                           |
++===========================================+
 | **sleep_data %\>%**                       |
 |                                           |
 | **filter(age \> mean(age, na.rm = TRUE)** |
@@ -447,6 +459,8 @@ The first argument is data, followed by the name(s) of the column(s) you want to
 **Select one variable**
 
 +-----------------------+
+|                       |
++=======================+
 | **sleep_data %\>%**   |
 |                       |
 | **select(bed_study)** |
@@ -455,6 +469,8 @@ The first argument is data, followed by the name(s) of the column(s) you want to
 **Select multiple variables**
 
 +----------------------------------------------+
+|                                              |
++==============================================+
 | **sleep_data %\>%**                          |
 |                                              |
 | **select(bed_study, bed_read, bed_friends)** |
@@ -463,6 +479,8 @@ The first argument is data, followed by the name(s) of the column(s) you want to
 **Select a range of variables**
 
 +-------------------------------------------+
+|                                           |
++===========================================+
 | **sleep_data %\>%**                       |
 |                                           |
 | **select(bed_study:bed_videogames) %\>%** |
@@ -473,6 +491,8 @@ The first argument is data, followed by the name(s) of the column(s) you want to
 **De-select variables with a minus sign (-)**
 
 +---------------------+
+|                     |
++=====================+
 | **sleep_data %\>%** |
 |                     |
 | **select(-age)**    |
@@ -483,6 +503,8 @@ The first argument is data, followed by the name(s) of the column(s) you want to
 Note: everything() is a helper function that gives us all the remaining variables in the data frame (see more on[ ](https://uopsych.github.io/psy611/labs/lab-5_instructor.html#helper)helper functions below)
 
 +---------------------------------+
+|                                 |
++=================================+
 | **sleep_data %\>%**             |
 |                                 |
 | **select(-(ESS1:everything())** |
@@ -492,21 +514,33 @@ Note: everything() is a helper function that gives us all the remaining variable
 
 There are some “helper” functions that you can use along with select() that can sometimes be more efficient than selecting your variables explicitly by name.
 
-|  |  |
-|----|----|
-| **function** | **what it does** |
-| starts_with() | selects columns starting with a string |
-| ends_with() | selects columns that end with a string |
-| contains() | selects columns that contain a string |
-| matches() | selects columns that match a regular expression |
-| num_ranges() | selects columns that match a numerical range |
-| one_of() | selects columns whose names match entries in a character vector |
-| everything() | selects all columns |
-| last_col() | selects last column; can include an offset. |
++-----------------------------------+-----------------------------------------------------------------+
+|                                   |                                                                 |
++===================================+=================================================================+
+| **function**                      | **what it does**                                                |
++-----------------------------------+-----------------------------------------------------------------+
+| starts_with()                     | selects columns starting with a string                          |
++-----------------------------------+-----------------------------------------------------------------+
+| ends_with()                       | selects columns that end with a string                          |
++-----------------------------------+-----------------------------------------------------------------+
+| contains()                        | selects columns that contain a string                           |
++-----------------------------------+-----------------------------------------------------------------+
+| matches()                         | selects columns that match a regular expression                 |
++-----------------------------------+-----------------------------------------------------------------+
+| num_ranges()                      | selects columns that match a numerical range                    |
++-----------------------------------+-----------------------------------------------------------------+
+| one_of()                          | selects columns whose names match entries in a character vector |
++-----------------------------------+-----------------------------------------------------------------+
+| everything()                      | selects all columns                                             |
++-----------------------------------+-----------------------------------------------------------------+
+| last_col()                        | selects last column; can include an offset.                     |
++-----------------------------------+-----------------------------------------------------------------+
 
 Quick example:
 
 +-----------------------------+
+|                             |
++=============================+
 | **sleep_data %\>%**         |
 |                             |
 | **select(starts_with(“a”)** |
@@ -520,9 +554,11 @@ mutate() requires data as its first argument, followed by a set of expressions d
 
 Create new variables
 
--   **Note**: New variables are automatically added at the end of the data frame (scroll to the right to see them)
+- **Note**: New variables are automatically added at the end of the data frame (scroll to the right to see them)
 
 +--------------------------------------------------+
+|                                                  |
++==================================================+
 | **sleep_data \<- sleep_data %\>%**               |
 |                                                  |
 | **mutate(ess_sum = ESS1 + ESS2 + ESS3 + ESS4 +** |
