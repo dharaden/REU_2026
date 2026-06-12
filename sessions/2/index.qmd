@@ -1,0 +1,18 @@
+---
+title: "Session 2"
+editor: visual
+---
+
+# More Detective Work
+
+During the second and final session, we wille explore regression, mixed models and anything else the group is interested in!
+
+Stay tuned for more information.
+
+### Slides
+
+### Activities
+
+### Data
+
+<br><br>

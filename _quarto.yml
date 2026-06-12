@@ -38,14 +38,12 @@ website:
         text: "Overview"
       - section: "Sessions"
         contents:
-          - href: sessions/1A/index.qmd
-            text: "Session 1 - Part 1"
-          - href: topics/tidy-viz.qmd
-            text: "Session 1 - Part 2"
-          - href: topics/tab-mark.qmd
-            text: "Session 2 - Part 1"
-          - href: topics/sem.qmd
-            text: "Session 2 - Part 2"
+          - href: sessions/1/index.qmd
+            text: "Session 1"
+          - href: sessions/2/index.qmd
+            text: "Session 2"
+          - href: sessions/X/index.qmd
+            text: "Extra Materials"
       - href: materials.qmd
         text: "Materials"
       - href: resources.qmd
