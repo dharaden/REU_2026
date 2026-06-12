@@ -3,8 +3,8 @@ project:
   
 website: 
   page-navigation: true
-  title: "AI-PROWIL IRES 2026 - Statistics Workshop" 
-  description: "A hands-on R and Quarto statistics workshop for REU participants in the AWARE-AI / AI-PROWIL IRES program."
+  title: "REU 2026 - Statistics Workshop" 
+  description: "A hands-on R and Quarto statistics workshop for REU participants."
   site-url: "https://dharaden.github.io/REU_2026" 
   
   repo-url: https://github.com/dharaden/REU_2026
@@ -36,16 +36,14 @@ website:
     contents:
       - href: index.qmd
         text: "Overview"
-      - section: "Topics"
+      - section: "Sessions"
         contents:
-          - href: topics/topic-1.qmd
-            text: "Getting Started"
-          - href: topics/tidy-viz.qmd
-            text: "dplyr & ggplot2"
-          - href: topics/tab-mark.qmd
-            text: "Tables & Reporting"
-          - href: topics/sem.qmd
-            text: "Structural Equation Modeling"
+          - href: sessions/1/index.qmd
+            text: "Session 1"
+          - href: sessions/2/index.qmd
+            text: "Session 2"
+          - href: sessions/X/index.qmd
+            text: "Extra Materials"
       - href: materials.qmd
         text: "Materials"
       - href: resources.qmd

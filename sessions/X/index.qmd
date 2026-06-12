@@ -1,0 +1,30 @@
+---
+title: "More Materials and Activities"
+editor: visual
+---
+
+# The Void 🌠
+
+Here is a collection of other documents that I have used in the past. This likely includes activities from other workshops and classes. They will not be structured to fit this specific workshop directly, but can be used to explore new concepts if we have some additional time.
+
+::: callout-note
+Some links may be broken as I haven't investigated everything within these pages. I apologize for any inconvenience.
+:::
+
+### Slides
+
+[Descriptives & Visualizations](../X/lec-3_desc-viz.html)
+
+Data Wrangling
+
+Design & Inference
+
+Correlation
+
+Comparing Means
+
+### Activities
+
+### Data
+
+<br><br>

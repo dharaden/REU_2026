@@ -1,0 +1,301 @@
+taster_id,cookie,rating
+1,Chocolate Chip,9
+2,Snickerdoodle,10
+3,Snickerdoodle,6
+4,Chocolate Chip,9
+5,Snickerdoodle,8
+6,Chocolate Chip,8
+7,Chocolate Chip,9
+8,Sugar,8
+9,Oatmeal,5
+10,Snickerdoodle,10
+11,Snickerdoodle,9
+12,Chocolate Chip,8
+13,Snickerdoodle,8
+14,Peanut Butter,8
+15,Chocolate Chip,9
+16,Sugar,7
+17,Peanut Butter,6
+18,Sugar,7
+19,Sugar,6
+20,Oatmeal,6
+21,Sugar,7
+22,Chocolate Chip,6
+23,Peanut Butter,9
+24,Chocolate Chip,8
+25,Chocolate Chip,8
+26,Snickerdoodle,8
+27,Oatmeal,6
+28,Oatmeal,7
+29,Peanut Butter,9
+30,Oatmeal,9
+31,Peanut Butter,7
+32,Oatmeal,8
+33,Chocolate Chip,7
+34,Oatmeal,6
+35,Peanut Butter,9
+36,Peanut Butter,8
+37,Chocolate Chip,8
+38,Sugar,6
+39,Peanut Butter,7
+40,Snickerdoodle,7
+41,Peanut Butter,8
+42,Snickerdoodle,9
+43,Peanut Butter,6
+44,Snickerdoodle,8
+45,Sugar,7
+46,Chocolate Chip,7
+47,Chocolate Chip,9
+48,Peanut Butter,8
+49,Sugar,7
+50,Chocolate Chip,9
+51,Peanut Butter,9
+52,Oatmeal,8
+53,Peanut Butter,10
+54,Oatmeal,7
+55,Sugar,10
+56,Chocolate Chip,8
+57,Snickerdoodle,8
+58,Oatmeal,8
+59,Chocolate Chip,9
+60,Oatmeal,7
+61,Snickerdoodle,9
+62,Sugar,7
+63,Peanut Butter,5
+64,Chocolate Chip,8
+65,Snickerdoodle,8
+66,Oatmeal,6
+67,Chocolate Chip,8
+68,Snickerdoodle,7
+69,Snickerdoodle,8
+70,Peanut Butter,9
+71,Sugar,9
+72,Snickerdoodle,8
+73,Sugar,5
+74,Sugar,7
+75,Chocolate Chip,8
+76,Peanut Butter,10
+77,Peanut Butter,9
+78,Peanut Butter,7
+79,Sugar,8
+80,Sugar,5
+81,Peanut Butter,8
+82,Chocolate Chip,8
+83,Oatmeal,8
+84,Peanut Butter,8
+85,Chocolate Chip,8
+86,Chocolate Chip,7
+87,Sugar,8
+88,Chocolate Chip,9
+89,Snickerdoodle,7
+90,Snickerdoodle,10
+91,Peanut Butter,10
+92,Chocolate Chip,9
+93,Sugar,6
+94,Peanut Butter,8
+95,Snickerdoodle,9
+96,Chocolate Chip,9
+97,Sugar,8
+98,Peanut Butter,8
+99,Oatmeal,6
+100,Chocolate Chip,7
+101,Oatmeal,8
+102,Peanut Butter,7
+103,Oatmeal,7
+104,Sugar,6
+105,Peanut Butter,8
+106,Oatmeal,7
+107,Peanut Butter,9
+108,Oatmeal,8
+109,Oatmeal,7
+110,Snickerdoodle,8
+111,Oatmeal,7
+112,Snickerdoodle,10
+113,Oatmeal,8
+114,Chocolate Chip,8
+115,Snickerdoodle,10
+116,Sugar,5
+117,Snickerdoodle,7
+118,Peanut Butter,8
+119,Chocolate Chip,9
+120,Sugar,6
+121,Snickerdoodle,6
+122,Chocolate Chip,9
+123,Chocolate Chip,7
+124,Peanut Butter,8
+125,Oatmeal,8
+126,Sugar,7
+127,Sugar,6
+128,Sugar,7
+129,Oatmeal,6
+130,Sugar,8
+131,Chocolate Chip,9
+132,Oatmeal,4
+133,Snickerdoodle,9
+134,Chocolate Chip,8
+135,Snickerdoodle,9
+136,Peanut Butter,7
+137,Sugar,9
+138,Peanut Butter,10
+139,Sugar,6
+140,Snickerdoodle,9
+141,Oatmeal,8
+142,Sugar,9
+143,Sugar,7
+144,Peanut Butter,8
+145,Oatmeal,5
+146,Snickerdoodle,6
+147,Chocolate Chip,8
+148,Chocolate Chip,7
+149,Sugar,8
+150,Chocolate Chip,10
+151,Snickerdoodle,9
+152,Oatmeal,8
+153,Chocolate Chip,9
+154,Oatmeal,7
+155,Peanut Butter,8
+156,Oatmeal,7
+157,Sugar,7
+158,Chocolate Chip,9
+159,Sugar,7
+160,Snickerdoodle,6
+161,Chocolate Chip,7
+162,Peanut Butter,8
+163,Sugar,6
+164,Oatmeal,6
+165,Oatmeal,4
+166,Snickerdoodle,8
+167,Snickerdoodle,8
+168,Snickerdoodle,9
+169,Chocolate Chip,10
+170,Oatmeal,6
+171,Peanut Butter,8
+172,Snickerdoodle,9
+173,Peanut Butter,6
+174,Snickerdoodle,8
+175,Oatmeal,6
+176,Peanut Butter,8
+177,Sugar,9
+178,Chocolate Chip,9
+179,Sugar,8
+180,Oatmeal,7
+181,Snickerdoodle,7
+182,Sugar,7
+183,Chocolate Chip,7
+184,Chocolate Chip,5
+185,Peanut Butter,8
+186,Sugar,7
+187,Peanut Butter,6
+188,Oatmeal,5
+189,Sugar,9
+190,Oatmeal,7
+191,Snickerdoodle,10
+192,Sugar,6
+193,Peanut Butter,6
+194,Sugar,8
+195,Sugar,6
+196,Chocolate Chip,6
+197,Peanut Butter,8
+198,Snickerdoodle,9
+199,Peanut Butter,8
+200,Sugar,8
+201,Sugar,8
+202,Sugar,8
+203,Oatmeal,7
+204,Oatmeal,5
+205,Chocolate Chip,7
+206,Peanut Butter,7
+207,Snickerdoodle,9
+208,Sugar,7
+209,Snickerdoodle,7
+210,Peanut Butter,7
+211,Sugar,4
+212,Snickerdoodle,8
+213,Peanut Butter,5
+214,Chocolate Chip,8
+215,Snickerdoodle,8
+216,Sugar,6
+217,Chocolate Chip,9
+218,Sugar,7
+219,Chocolate Chip,7
+220,Peanut Butter,7
+221,Sugar,8
+222,Snickerdoodle,7
+223,Sugar,7
+224,Peanut Butter,8
+225,Snickerdoodle,10
+226,Oatmeal,6
+227,Snickerdoodle,8
+228,Sugar,8
+229,Oatmeal,7
+230,Oatmeal,6
+231,Peanut Butter,6
+232,Chocolate Chip,8
+233,Chocolate Chip,8
+234,Oatmeal,7
+235,Peanut Butter,8
+236,Chocolate Chip,8
+237,Oatmeal,7
+238,Snickerdoodle,10
+239,Chocolate Chip,7
+240,Chocolate Chip,8
+241,Sugar,4
+242,Oatmeal,6
+243,Peanut Butter,8
+244,Snickerdoodle,7
+245,Peanut Butter,8
+246,Sugar,8
+247,Peanut Butter,7
+248,Peanut Butter,8
+249,Oatmeal,7
+250,Sugar,10
+251,Snickerdoodle,8
+252,Sugar,8
+253,Chocolate Chip,10
+254,Snickerdoodle,8
+255,Oatmeal,9
+256,Peanut Butter,8
+257,Snickerdoodle,7
+258,Oatmeal,9
+259,Sugar,8
+260,Oatmeal,9
+261,Oatmeal,6
+262,Peanut Butter,7
+263,Peanut Butter,8
+264,Snickerdoodle,9
+265,Oatmeal,6
+266,Oatmeal,7
+267,Sugar,6
+268,Chocolate Chip,8
+269,Snickerdoodle,9
+270,Chocolate Chip,7
+271,Oatmeal,6
+272,Peanut Butter,9
+273,Sugar,7
+274,Snickerdoodle,8
+275,Peanut Butter,9
+276,Oatmeal,8
+277,Chocolate Chip,9
+278,Snickerdoodle,10
+279,Oatmeal,8
+280,Oatmeal,5
+281,Peanut Butter,6
+282,Oatmeal,8
+283,Snickerdoodle,6
+284,Snickerdoodle,6
+285,Chocolate Chip,8
+286,Peanut Butter,8
+287,Oatmeal,8
+288,Snickerdoodle,8
+289,Chocolate Chip,9
+290,Snickerdoodle,9
+291,Peanut Butter,9
+292,Chocolate Chip,6
+293,Oatmeal,5
+294,Snickerdoodle,10
+295,Oatmeal,6
+296,Sugar,7
+297,Snickerdoodle,9
+298,Chocolate Chip,8
+299,Sugar,9
+300,Oatmeal,8

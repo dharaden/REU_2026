@@ -1,0 +1,32 @@
+---
+title: "Session 1"
+editor: visual
+---
+
+# Getting Started with R & Tidy Data
+
+Welcome to the workshop! I am very excited to get to work with you on our journey into statistics. During the first session, we will examine identifying evidence for our claims, getting started with R, and introducing a few basic methodologies (e.g., t-tests, ANOVA, correlations).
+
+The goal of the workshop is for you to have an understanding of navigating these statistical models. The pacing and direction of the workshop may deviate from what we have here in order to meet the needs of the participants.
+
+### Slides
+
+💻Getting Started (Session 1)<a href="/sessions/1/session1_slides.pptx" download="session1_slides.pptx">Session 1 Slides (.pptx)</a>
+
+📎Base R to Tidyverse<a href="/sessions/1/base-r-tidyverse-translation-guide.docx" download="base-r-tidyverse-translation-guide.docx">Base R to Tidyverse Translation Guide (.docx)</a>
+
+### Activities
+
+🍪 The R Kitchen<a href="/sessions/1/welcome-to-the-kitchen.docx" download="welcome-to-the-kitchen.docx">Welcome to the Kitchen (.docx)</a>
+
+🔍 The Detective (Case 1)<a href="/sessions/1/case-file-1_ttest.docx" download="case-file-1_ttest.docx">Case 1 t-test (.docx)</a>
+
+🔎 The Detective (Case 2)<a href="/sessions/1/case-file-2_anova.docx" download="case-file-2_anova.docx">Case 2 ANOVA (.docx)</a>
+
+### Data
+
+Cookie Ratings<a href="/files/data/cookie_ratings.csv" download="cookie_ratings.csv">Cookie Ratings (.csv)</a>
+
+Cookie Lineup<a href="/files/data/cookie_lineup.csv" download="cookie_lineup.csv">Cookie Lineup (.csv)</a>
+
+<br><br>

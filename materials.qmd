@@ -4,6 +4,8 @@ title: Materials
 
 ## Data for Activities
 
+Sleep Data <a href="/files/data/Sleep_Data.csv" download="Sleep_Data.csv">Sleep Data (.csv)</a>
+
 TIPI_Data <a href="/files/data/TIPI_Data.csv" download="TIPI_Data.csv">TIPI Data (.csv)</a>
 
 TIPI Documentation - <a href="/files/data/TIPI_Qs.docx" download="TIPI_Qs.docx">TIPI Documentation (.docx)</a>
@@ -11,6 +13,10 @@ TIPI Documentation - <a href="/files/data/TIPI_Qs.docx" download="TIPI_Qs.docx">
 Visualization Dataset <a href="/files/data/viz.csv" download="viz.csv">Download Viz Activity Data (.csv)</a>
 
 Bechdel Dataset <a href="/files/data/bechdel.csv" download="bechdel.csv"> Download Bechdel Data (.csv)</a>
+
+Cards Against Humanity Dataset <a href="/files/data/CAH_Data.csv" download="CAH_Data.csv"> Download CAH Data (.csv)</a>
+
+Cards Against Humanity Data Dictionary - <a href="/files/data/CAH_Data_dictionary.csv" download="CAH_Data_dictionary.csv">CAH Data Dictionary (.csv)</a>
 
 ## Markdowns For Activities
 
