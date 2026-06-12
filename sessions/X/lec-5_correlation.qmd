@@ -44,13 +44,13 @@ options(scipen=999)
 
 ## Today's Roadmap 🗺️
 
--   Explain the counterintuitive logic of Null Hypothesis Significance Testing (NHST)
+- Explain the counterintuitive logic of Null Hypothesis Significance Testing (NHST)
 
--   Define and correctly interpret a p-value
+- Define and correctly interpret a p-value
 
--   Distinguish what a p-value *is* from what it is *not*
+- Distinguish what a p-value *is* from what it is *not*
 
--   Apply the steps of NHST to a research question
+- Apply the steps of NHST to a research question
 
 # The Lady Tasting Tea 🍵
 
@@ -124,13 +124,13 @@ $$P(Data|H_0)$$
 
 ## NHST Analogy: The Legal System
 
--   The **Null Hypothesis (** $H_0$ **)** is the starting assumption: "**presumed innocent**." In research, this means assuming there is *no effect*, *no relationship*, or *no difference*.
+- The **Null Hypothesis (** $H_0$ **)** is the starting assumption: "**presumed innocent**." In research, this means assuming there is *no effect*, *no relationship*, or *no difference*.
 
--   **You, the researcher**, are the prosecution, gathering evidence (data) to challenge this presumption.
+- **You, the researcher**, are the prosecution, gathering evidence (data) to challenge this presumption.
 
--   Your **p-value** reflects the strength of your evidence. A small p-value *likely* means your evidence is strong.
+- Your **p-value** reflects the strength of your evidence. A small p-value *likely* means your evidence is strong.
 
--   **Rejecting the null** is like a "guilty" verdict. You have enough evidence to say the initial presumption of innocence (no effect) is unlikely to be true.
+- **Rejecting the null** is like a "guilty" verdict. You have enough evidence to say the initial presumption of innocence (no effect) is unlikely to be true.
 
 ------------------------------------------------------------------------
 
@@ -150,11 +150,11 @@ This is one of the most important—and misunderstood—concepts in statistics.
 
 **It is NOT:**
 
--   The probability that the null hypothesis is true
+- The probability that the null hypothesis is true
 
--   The probability that our research hypothesis is true
+- The probability that our research hypothesis is true
 
--   A measure of the size or importance of an effect
+- A measure of the size or importance of an effect
 
 ------------------------------------------------------------------------
 
@@ -170,13 +170,13 @@ This is one of the most important—and misunderstood—concepts in statistics.
 
 4.  Calculate parameters of your sampling distribution under the null.
 
--   If $z$, calculate $\mu$ and $\sigma_M$
+- If $z$, calculate $\mu$ and $\sigma_M$
 :::
 
 ::: {.column width="50%"}
 5.  Calculate test statistic under the null.
 
--   If $z$, $\frac{\bar{X} - \mu}{\sigma_M}$
+- If $z$, $\frac{\bar{X} - \mu}{\sigma_M}$
 
 6.  Calculate probability of that test statistic or more extreme under the null, and compare to alpha.
 :::
@@ -190,9 +190,9 @@ This is one of the most important—and misunderstood—concepts in statistics.
 
 Turn to someone next to you and in your own words, explain what the p-value is telling you.
 
--   Looking at the p-value, what can you conclude?
+- Looking at the p-value, what can you conclude?
 
--   Looking at the p-value, what can't you conclude?
+- Looking at the p-value, what can't you conclude?
 
 ------------------------------------------------------------------------
 
@@ -231,15 +231,15 @@ Will tell us 2 key pieces of information about the relationship:
 
 **Research Question:** Is there a relationship between the amount of candy we receive on Halloween and the \# of houses that we go to?
 
--   **Variables:**
+- **Variables:**
 
-    -   `house_n`: Number of houses approached
+  - `house_n`: Number of houses approached
 
-    -   `candy`: Amount of candy (# of pieces)
+  - `candy`: Amount of candy (# of pieces)
 
--   **Hypothesis** $H_A$ : There will be a **positive correlation**. As a trick-or-treater goes to more houses, their amount of candy will increase ( $r \neq 0$ .
+- **Hypothesis** $H_A$ : There will be a **positive correlation**. As a trick-or-treater goes to more houses, their amount of candy will increase ( $r \neq 0$ .
 
--   **Null Hypothesis** $H_0$: There is **no correlation** ( $r = 0$ ).
+- **Null Hypothesis** $H_0$: There is **no correlation** ( $r = 0$ ).
 
 ------------------------------------------------------------------------
 
@@ -278,16 +278,14 @@ corr_data %>%
 
 Before we talk about correlation, we need to take a look at covariance
 
-$$
-cov_{xy} = \frac{\sum(x-\bar{x})(y-\bar{y})}{N-1}
-$$
+$$cov_{xy} = \frac{\sum(x-\bar{x})(y-\bar{y})}{N-1}$$
 
 ::: incremental
--   Covariance can be thought of as the "average cross product" between two variables
+- Covariance can be thought of as the "average cross product" between two variables
 
--   It captures the *raw/unstandardized* relationship between two variables
+- It captures the *raw/unstandardized* relationship between two variables
 
--   Covariance matrix is the basis for many statistical analyses
+- Covariance matrix is the basis for many statistical analyses
 :::
 
 ------------------------------------------------------------------------
@@ -298,9 +296,7 @@ The Pearson correlation coefficient $r$ addresses this by standardizing the cova
 
 It is done in the same way that we would create a $z-score$...by dividing by the standard deviation
 
-$$
-r_{xy} = \frac{Cov(x,y)}{sd_x sd_y}
-$$
+$$r_{xy} = \frac{Cov(x,y)}{sd_x sd_y}$$
 
 ------------------------------------------------------------------------
 
@@ -361,15 +357,15 @@ cor.test(corr_data$house_n, corr_data$candy)
 
 ### Components of `cor.test()`
 
--   **`p-value`**: The probability of getting a correlation this strong if the null were true is virtually zero ( $p < .001$ ) . We **reject the null hypothesis**.
+- **`p-value`**: The probability of getting a correlation this strong if the null were true is virtually zero ( $p < .001$ ) . We **reject the null hypothesis**.
 
--   **`95 percent confidence interval`**: We are 95% confident that the true population correlation is between 0.86 and 0.92. Importantly, this interval **does not contain 0**.
+- **`95 percent confidence interval`**: We are 95% confident that the true population correlation is between 0.86 and 0.92. Importantly, this interval **does not contain 0**.
 
-    -   We cannot say "There is a 95% chance that the population correlation falls in this range"
+  - We cannot say "There is a 95% chance that the population correlation falls in this range"
 
-    -   CI's are based on the infinite running of the test (<https://rpsychologist.com/d3/ci/>)
+  - CI's are based on the infinite running of the test (<https://rpsychologist.com/d3/ci/>)
 
--   **`sample estimates: cor`**: This is our sample correlation coefficient, $r = 0.89$. This is our **effect size**.
+- **`sample estimates: cor`**: This is our sample correlation coefficient, $r = 0.89$. This is our **effect size**.
 
 # The "So What?" - Effect Sizes & Practical Significance
 
@@ -395,9 +391,9 @@ For correlation, we have two related measures of effect size:
 
 1.  **Pearson's** $r$: The correlation coefficient itself. A standardized measure of the strength and direction of the linear association.
 
-    -   Cohen's Conventions (a rough guide): Small (∣.10∣), Medium (∣.30∣), Large (∣.50∣).
+    - Cohen's Conventions (a rough guide): Small (∣.10∣), Medium (∣.30∣), Large (∣.50∣).
 
-    -   Our finding of $r = 0.89$ is a **large effect**.
+    - Our finding of $r = 0.89$ is a **large effect**.
 
 2.  **Coefficient of Determination** ($R^2$): This is simply r squared. It represents the **proportion of variance** in one variable that is "explained" or "accounted for" by the other.
 
@@ -407,9 +403,9 @@ For correlation, we have two related measures of effect size:
 
 For our candy and housese data:
 
--   Our correlation was $r = 0.89$
+- Our correlation was $r = 0.89$
 
--   The coefficient of determination is $R^2 = 0.89^2 = 0.792$
+- The coefficient of determination is $R^2 = 0.89^2 = 0.792$
 
 **Interpretation:**
 
@@ -493,21 +489,21 @@ $R^2 = -0.06^2 = 0.0034$. Therefore, approximately 0.34% of the variability in t
 
 ## Handling Missing - Correlation
 
--   Listwise Deletion (complete cases)
+- Listwise Deletion (complete cases)
 
-    ::: incremental
-    -   Removes participants completely if they are missing a value being compared
-    -   Smaller Sample Sizes
-    -   Doesn't bias correlation estimate
-    :::
+  ::: incremental
+  - Removes participants completely if they are missing a value being compared
+  - Smaller Sample Sizes
+  - Doesn't bias correlation estimate
+  :::
 
--   Pairwise Deletion
+- Pairwise Deletion
 
-    ::: incremental
-    -   Removes participants for that single pair, but leaves information in when there are complete information
-    -   Larger Sample Sizes
-    -   Could bias estimates if there is a systematic reason things are missing
-    :::
+  ::: incremental
+  - Removes participants for that single pair, but leaves information in when there are complete information
+  - Larger Sample Sizes
+  - Could bias estimates if there is a systematic reason things are missing
+  :::
 
 ------------------------------------------------------------------------
 
@@ -552,9 +548,9 @@ Our goal is to run a correlation matrix to see how these three variables relate 
 
 **Applying the Rule:**
 
--   Participant 3 is missing `Depression`. They're out.
+- Participant 3 is missing `Depression`. They're out.
 
--   Participant 5 is missing `Sleep Quality`. They're out.
+- Participant 5 is missing `Sleep Quality`. They're out.
 
 **The Resulting Data for Analysis:** This leaves us with only the participants who have complete data on all three variables. We lose 40% of our data
 
@@ -587,7 +583,7 @@ Look at each pair to determine the sample sizes
 ### Summary
 
 |  |  |  |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | **Correlation Pair** | **N with Listwise Deletion** | **N with Pairwise Deletion** |
 | Anxiety & Depression | 3 | 4 |
 | Anxiety & Sleep Quality | 3 | 4 |
@@ -601,7 +597,7 @@ Look at each pair to determine the sample sizes
 
 We need to be able to capture this different (ordinal) "relationship"
 
--   If student 1 works more hours than student 2, then we can guarantee that student 1 will get a better grade
+- If student 1 works more hours than student 2, then we can guarantee that student 1 will get a better grade
 
 Instead of using the amount given by the variables ("hours studied"), we rank the variables based on least (rank = 1) to most (rank = 10)
 
@@ -617,22 +613,22 @@ Who were those white dudes that started this?
 
 The concept of the correlation is primarily attributed to Sir Frances Galton
 
--   He was also the founder of the [concept of eugenics](https://www.theguardian.com/commentisfree/2019/oct/03/eugenics-francis-galton-science-ideas)
+- He was also the founder of the [concept of eugenics](https://www.theguardian.com/commentisfree/2019/oct/03/eugenics-francis-galton-science-ideas)
 
 The correlation coefficient was developed by his student, [Karl Pearson](https://www.britannica.com/biography/Karl-Pearson), and adapted into the ANOVA framework by [Sir Ronald Fisher](https://statmodeling.stat.columbia.edu/2020/08/01/ra-fisher-and-the-science-of-hatred/)
 
--   Both were prominent advocates for the eugenics movement
+- Both were prominent advocates for the eugenics movement
 
 ------------------------------------------------------------------------
 
 ## What do we do with this info?
 
 ::: incremental
--   Never use the correlation or the later techniques developed on it? Of course not.
+- Never use the correlation or the later techniques developed on it? Of course not.
 
--   Acknowledge this history? Certainly.
+- Acknowledge this history? Certainly.
 
--   [Understand how the perspectives](https://medium.com/swlh/is-statistics-racist-59cd4ddb5fa9) of Galton, Fisher, Pearson and others [shaped our practices](http://gppreview.com/2019/12/16/eugenics-ethics-statistical-analysis/)? We must! -- these are not set in stone, [nor are they necessarily the best way](https://www.forbes.com/sites/jerrybowyer/2016/01/06/beer-vs-eugenics-the-good-and-the-bad-uses-of-statistics/?sh=3114a0c82a14) to move forward.
+- [Understand how the perspectives](https://medium.com/swlh/is-statistics-racist-59cd4ddb5fa9) of Galton, Fisher, Pearson and others [shaped our practices](http://gppreview.com/2019/12/16/eugenics-ethics-statistical-analysis/)? We must! -- these are not set in stone, [nor are they necessarily the best way](https://www.forbes.com/sites/jerrybowyer/2016/01/06/beer-vs-eugenics-the-good-and-the-bad-uses-of-statistics/?sh=3114a0c82a14) to move forward.
 :::
 
 ------------------------------------------------------------------------
@@ -640,13 +636,13 @@ The correlation coefficient was developed by his student, [Karl Pearson](https:/
 ## Be aware of the assumptions
 
 ::: incremental
--   Statistics are often thought of as being absent of bias...they are just numbers
+- Statistics are often thought of as being absent of bias...they are just numbers
 
--   Statistical significance was a way to avoid talking about nuance or degree.
+- Statistical significance was a way to avoid talking about nuance or degree.
 
--   "Correlation does not imply causation" was a refutation of work demonstrating associations between environment and poverty.
+- "Correlation does not imply causation" was a refutation of work demonstrating associations between environment and poverty.
 
--   Need to be particularly mindful of our goals as scientists and how they can influence the way we interpret the findings
+- Need to be particularly mindful of our goals as scientists and how they can influence the way we interpret the findings
 :::
 
 # Fancy Tables
